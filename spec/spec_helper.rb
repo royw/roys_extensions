@@ -5,5 +5,5 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'roys_extensions'
 
 Spec::Runner.configure do |config|
-  
+
 end

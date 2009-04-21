@@ -1,6 +1,7 @@
 = roys_extensions
 
-Description goes here.
+Various extensions to the standard ruby library classes that I find useful.
+No particular theme or mission.
 
 == Copyright
 
