@@ -24,6 +24,14 @@ class String
     end
   end
 
+  my_extension("remove_punctuation") do
+    # == Synopsis
+    # remove punctuation the shouldn't be in file names
+    def remove_punctuation
+      self.gsub(/([\?\:\!\"\'\,\.\-\/\*\~\;\@\#\$\%\^])/, ' ').gsub(/\s+/, ' ').strip
+    end
+  end
+
   my_extension("strip_tags") do
     # == Synopsis
     # remove angle bracket tags from the string

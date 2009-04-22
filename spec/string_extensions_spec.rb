@@ -27,4 +27,8 @@ describe "StringExtensions" do
     s.ext('d').should == 'a/b/c.d'
   end
 
+  it "should remove punctuation for a file name" do
+    s = '*abc?:!",.-/~;@#$%^def' + "\'ghi"
+    s.remove_punctuation.should == 'abc def ghi'
+  end
 end
